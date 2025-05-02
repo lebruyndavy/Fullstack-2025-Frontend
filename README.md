@@ -5,7 +5,7 @@
 | Pages    | Name                                  | Class   | GitHub Username                 |
 |:---------|:--------------------------------------|:--------|:--------------------------------|
 | student1 | [Davy Le Bruyn](mailto:r1034516@student.thomasmore.be) | 1ITF WT | [lebruyndavy](https://github.com/lebruyndavy) |
-| student2 | [name 2](mailto:john.doe@example.com) | 1ITF xx | [name](https://github.com/name) |
+| student2 | [Tri Waluyono](r1012723@student.thomasmore.be) | 1ITF WT | [name](https://github.com/name) |
 | student3 | [name 3](mailto:john.doe@example.com) | 1ITF xx | [name](https://github.com/name) |
 
 - **GitHub Repo**: [https://github.com/itfactory-tm/...](https://github.com/itfactory-tm/....)
