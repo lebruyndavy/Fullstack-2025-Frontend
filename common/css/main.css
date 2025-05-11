@@ -1,7 +1,117 @@
 @import "bootstrap.min.css";
 @import "global_vars.css";
+@import "fontawesome.min.css";
+@import "solid.min.css";
+@import "brands.min.css";
+
 /* Import student CSS files here */
 @import "../../student1/css/student1.css";
 @import "../../student2/css/student2.css";
 @import "../../student3/css/student3.css";
 @import "../../student4/css/student4.css";
+
+/* General Styling */
+body {
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    &:before {
+        content: "";
+        width: 1000px;
+        height: 1000px;
+        background: #FEC405;
+        background: radial-gradient(circle,rgba(254, 196, 5, 0.3) 0%, rgba(238, 237, 228, 0) 50%);        position: absolute;
+        top: -500px;
+        left: -500px;
+        z-index: 0;
+    }
+
+    &:after {
+        content: "";
+        width: 1000px;
+        height: 1000px;
+        background: #FEC405;
+        background: radial-gradient(circle,rgba(254, 196, 5, 0.3) 0%, rgba(238, 237, 228, 0) 50%);        position: absolute;
+        top: -500px;
+        right: -500px;
+        z-index: 0;
+    }
+}
+
+.navbar-nav, #hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.8rem 1.6rem;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+
+    &:hover {
+        background-color: var(--bs-primary-hover);
+        border-color: var(--bs-primary-hover);    
+    }
+
+    &:focus {
+        background-color: var(--bs-primary-hover);
+        border-color: var(--bs-primary-hover);
+    }
+
+    &:active {
+        background-color: var(--bs-primary-active) !important;
+        border-color: var(--bs-primary-active) !important;
+    }
+}
+
+.btn-outline-primary {
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+
+    &:hover {
+        background-color: var(--bs-primary);
+        border-color: var(--bs-primary);    
+    }
+
+    &:focus {
+        background-color: var(--bs-primary-hover);
+        border-color: var(--bs-primary-hover);
+    }
+
+    &:active {
+        background-color: var(--bs-primary-active) !important;
+        border-color: var(--bs-primary-active) !important;
+    }
+}
+
+/* Text */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p, a, span {
+    font-size: 0.875rem;
+}
+
+.small {
+    font-size: 0.750rem;
+}
+
+
+/* Utilty */
+.rotate-up { transform: rotate(-45deg); }
+.rotate-down { transform: rotate(45deg); }

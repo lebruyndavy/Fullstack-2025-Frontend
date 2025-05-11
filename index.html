@@ -1,31 +1,226 @@
 <!doctype html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="common/css/main.css">
-      <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-<div class="container">
-      <h1>Project Full Stack</h1>
-      <div class="row">
-            <p class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur molestias
-                  nam
-                  optio placeat? Aperiam assumenda at enim ex illum ipsam perspiciatis possimus quo rerum sint.
-                  Accusantium
-                  minima placeat provident.</p>
-            <p class="col-md-4">Autem consectetur facere illum ipsum iste maxime nam nemo repudiandae sapiente tempora.
-                  Ad
-                  blanditiis eos fuga ipsa iusto, neque nulla numquam officia, optio quod temporibus tenetur. Asperiores
-                  blanditiis nesciunt obcaecati.</p>
-            <p class="col-md-4">Cum deleniti distinctio error est facilis in inventore, iste laborum minus nisi nulla
-                  omnis
-                  pariatur perferendis possimus provident quasi quo rem repellat rerum sed sequi sit, unde. Animi
-                  assumenda,
-                  blanditiis!</p>
-      </div>
-</div>
-<link rel="stylesheet" href="common/js/bootstrap.bundle.min.js">
+    <header class="bg-light">
+        <nav id="navigation" class="navbar navbar-expand-md">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img src="common/img/logo.svg" alt="logo" width="191" height="61">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="submenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ps-md-4 ms-md-4">
+                        <li class="nav-item">
+                            <a href="" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Over Ons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Portfolio</a>
+                        </li>
+                    </ul>
+            
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="" class="btn btn-outline-primary">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-light border-bottom py-4">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-6 m-auto text-center">
+                    <h1 class="text-uppercase">Een digitale marketing agency</h1>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis suscipit efficitur.</p>
+
+                    <a href="" class="btn btn-primary mb-2 mb-md-0">Neem contact op <i class="fas fa-arrow-right rotate-up"></i></a>
+                    <a href="" class="btn btn-outline-primary">Ontdek ons portfolio <i class="fas fa-arrow-right rotate-down"></i></a>
+                </div>
+            </div>
+
+            <img src="common/img/hero-image.png" alt="hero" class="img-fluid">
+        </div>
+    </section>
+
+    <section id="about-us" class="container">
+        <div class="row align-items-center py-5 my-4">
+            <div class="col-md-6">
+                <h2>Over ons</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis suscipit efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis suscipit efficitur.</p>
+                <p class="fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="btn btn-primary">Leer ons kennen <i class="fas fa-chevron-right fa-xs"></i></a>
+            </div>
+
+            <div class="col-md-5 offset-md-1">
+                <img src="common/img/stats.png" alt="stats" class="img-fluid mt-5 mt-md-0">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <div class="bg-primary rounded p-3 p-md-4">
+            <div class="row mt-5 mb-4">
+                <div class="col-lg-4">
+                    <h2 class="text-white">Onze diensten</h2>
+                    <p class="text-white mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis suscipit efficitur.</p>
+                </div>
+                <div class="col-lg-8 d-lg-flex justify-content-lg-end align-items-lg-end">
+                    <a href="" class="btn btn-outline-light mt-4 mt-mb-0">Neem contact op <i class="fas fa-arrow-right rotate-up"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="bg-secondary rounded p-4 text-white h-100">
+                        <i class="fas fa-laptop fa-xl mb-4"></i>
+                        <h3>Web ontwikkeling</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Suspendisse mollis suscipit efficitur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="bg-secondary rounded p-4 text-white h-100">
+                        <i class="fas fa-search fa-xl mb-4"></i>
+                        <h3>SEO optimalisatie</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Suspendisse mollis suscipit efficitur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="bg-secondary rounded p-4 text-white h-100">
+                        <i class="fas fa-chart-line fa-xl mb-4"></i>
+                        <h3>Digitale marketing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Suspendisse mollis suscipit efficitur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="container">
+        <div class="row py-5 my-3">
+            <div class="col-md-4">
+                <h2>Wat onze klanten zeggen</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis suscipit efficitur. </p>
+            </div>
+
+            <div class="col-md-6 offset-md-2">
+                <div id="carouselControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="bg-light rounded p-4">
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                                    numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
+                                </p>
+                                <p class="mt-20 mb-0 fw-bold">John Doe</p>
+                                <p>ABC Company</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-light rounded p-4">
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                                    numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
+                                </p>
+                                <p class="mt-20 mb-0 fw-bold">Jane Doe</p>
+                                <p>XYZ Company</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-light rounded p-4">
+                                <p>
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                                    numquam iure provident voluptate esse quasi, voluptas nostrum quisquam!"
+                                </p>
+                                <p class="mt-20 mb-0 fw-bold">John Deer</p>
+                                <p>123 Company</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-primary px-3">
+        <div class="container pt-4">
+            <div class="row bg-white rounded">
+                <div class="col-md-6 m-auto text-center p-5">
+                    <h2>Klaar voor jouw digitale start?</h2>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Suspendisse mollis suscipit efficitur.</p>
+                    <a href="" class="btn btn-primary mt-2">Neem contact op <i class="fas fa-arrow-right rotate-up"></i></a>
+                </div>
+            </div>
+
+            <div class="row text-white py-4">
+                <div class="col-md-4">
+                    <img src="common/img/logo-white.svg" alt="logo" class="mb-3"">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis suscipit efficitur.</p>
+                </div>
+
+                <div class="col-md-6 offset-md-2">
+                    <div class="navbar navbar-dark navbar-expand">
+                        <ul class="navbar-nav justify-content-md-end flex-grow-1 text-uppercase">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Over Ons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-white py-4">
+                <div class="col-md-9 d-flex justify-content-between flex-column flex-md-row mb-3 mb-md-0">
+                    <span><i class="fas fa-envelope-open me-2"></i><a href="emailto:info@dykotrix.be" class="text-white">info@dykotrix.be</a></span>
+                    <span><i class="fas fa-phone me-2"></i><a href="tel:+3212345678" class="text-white">+3212 34 56 78</a></span>
+                    <span><i class="fas fa-building me-2"></i>BTW BE 1234 567 891</span>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-md-end">
+                    <i class="fa-brands fa-facebook pe-2"></i>
+                    <i class="fa-brands fa-instagram pe-2"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center py-3 border-top">
+                    <span class="small text-white">Copyright © 2025 Creative Web Solutions</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/common/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

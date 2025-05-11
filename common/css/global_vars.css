@@ -1,5 +1,21 @@
  /* Global CSS variabels + overwrite Bootstrap variabels comes here */
 
- :root {
+:root {
+    --bs-primary: #0B3719;
+    --bs-secondary: #104520;
+    --bs-light: #EEEDE4;
+    --bs-dark: #161616;
+    --bs-body-color: #161616;
+    --bs-primary-hover: #092e16;
+    --bs-primary-active: #06240f;
 
- }
+    --bs-primary-rgb: 11, 55, 25;
+    --bs-secondary-rgb: 16, 69, 32;
+    --bs-light-rgb: 238, 237, 228;
+    --bs-dark-rgb: 22, 22, 22;
+
+    --bs-btn-bg: #0B3719;
+
+    --bs-font-sans-serif: 'Poppins', sans-serif;
+    --bs-border-radius: 0.5rem;
+}
