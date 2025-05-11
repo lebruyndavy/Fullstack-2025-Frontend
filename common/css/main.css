@@ -16,35 +16,6 @@ body {
 }
 
 /* Header */
-header {
-    &:before {
-        content: "";
-        width: 1000px;
-        height: 1000px;
-        background: #FEC405;
-        background: radial-gradient(circle,rgba(254, 196, 5, 0.3) 0%, rgba(238, 237, 228, 0) 50%);        position: absolute;
-        top: -500px;
-        left: -500px;
-        z-index: 0;
-    }
-
-    &:after {
-        content: "";
-        width: 1000px;
-        height: 1000px;
-        background: #FEC405;
-        background: radial-gradient(circle,rgba(254, 196, 5, 0.3) 0%, rgba(238, 237, 228, 0) 50%);        position: absolute;
-        top: -500px;
-        right: -500px;
-        z-index: 0;
-    }
-}
-
-.navbar-nav, #hero .container {
-    position: relative;
-    z-index: 1;
-}
-
 .nav-link.active {
     font-weight: 700;
 }
