@@ -1,5 +1,5 @@
  /* Global CSS variabels + overwrite Bootstrap variabels comes here */
 
- :root {
-
- }
+:root {
+    --bs-gray: #B2B3B3;
+}
