@@ -1,14 +1,249 @@
 <!doctype html>
-<!-- Name:
-    Class:
-    R-number:
-     -->
+<!-- Name: Davy Le Bruyn
+    Class: 1 ITF WT
+    R-number: r1034516
+    -->
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Document</title>
-        <meta name="author" content="your name" />
-    </head>
-    <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../common/css/main.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Dykotrix - Portfolio</title>
+    <meta name="author" content="Davy Le Bruyn" />
+
+    <script src="../common/js/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <header class="bg-light">
+        <nav id="navigation" class="navbar navbar-expand-md">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img src="../common/img/logo.svg" alt="logo" width="191" height="61">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="submenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ps-md-4 ms-md-4">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Over Ons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/student1/student1page1.html" class="nav-link active">Portfolio</a>
+                        </li>
+                    </ul>
+            
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="" class="btn btn-outline-primary">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="banner" class="bg-primary">
+            <div class="container text-center py-2 text-white">
+                <span class="small">Deze pagina is gemaakt door Davy Le Bruyn</span>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="portfolio container mb-5">
+            <div class="row mb-3">
+                <div class="col-8 mx-auto text-center pt-5">
+                    <h1>Portfolio</h1>
+                    <p class="mb-0">Een goed begin, is het halve werk. Hieronder zie je dus al een goeie start, maar niet alles.</p>
+                    <p>Zit je zelf met een topidee? Laten we er dan effectief werk van maken.</p>
+                </div>
+                <div class="col-12">
+                    <ul class="list-unstyled mt-2 d-flex flex-row flex-wrap justify-content-center align-items-center px-2">
+                        <li class="me-2 mb-2">
+                            <span class="js-filter-trigger active portfolio__button" filterdata="all">
+                                Alle
+                            </span>
+                        </li>
+                        <li class="me-2 mb-2">
+                            <span class="js-filter-trigger portfolio__button" filterdata="digital">
+                                Digitale ontwerpen
+                            </span>
+                        </li>
+                        <li class="me-2 mb-2">
+                            <span class="js-filter-trigger portfolio__button" filterdata="branding">
+                                Logo & branding
+                            </span>
+                        </li>
+                        <li class="me-2 mb-2">
+                            <span class="js-filter-trigger portfolio__button" filterdata="website">
+                                Website & UI/UX
+                            </span>
+                        </li>
+                        <li class="me-2 mb-2">
+                            <span class="js-filter-trigger portfolio__button" filterdata="print">
+                                Zakelijk drukwerk
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row js-filter-wrapper portfolio__object-wrapper">
+                <div class="js-filter-object portfolio__object" filterdata="digital">
+                    <a href="img/digital-1.jpg" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/digital-1.jpg" alt="Studylab ads">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="branding">
+                    <a href="img/branding-1.jpeg" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/branding-1.jpeg" alt="Digiweb logo">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="website">
+                    <a href="img/website-1.jpg" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/website-1.jpg" alt="Vitacool website">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="print">
+                    <a href="img/print-1.jpg" class="venobox" data-gall="portfolio"">
+                        <figure>
+                            <img src="img/print-1.jpg" alt="Alouette visitekaartje">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="digital">
+                    <a href="img/digital-2.jpg" class="venobox" data-gall="portfolio"">
+                        <figure>
+                            <img src="img/digital-2.jpg" alt="ARI Technics ads">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="branding">
+                    <a href="img/branding-2.jpg" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/branding-2.jpg" alt="Wheels & Deals mini">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="website">
+                    <a href="img/website-2.png" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/website-2.png" alt="Squire website">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="print">
+                    <a href="img/print-2.png" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/print-2.png" alt="Asbest platform flyer">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="digital">
+                    <a href="img/digital-3.png" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/digital-3.png" alt="Immoservice posts">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="branding">
+                    <a href="img/branding-3.jpg" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/branding-3.jpg" alt="Sister Studio logo">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="website">
+                    <a href="img/website-3.png" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/website-3.png" alt="Simba login">
+                        </figure>
+                    </a>
+                </div>
+                <div class="js-filter-object portfolio__object" filterdata="print">
+                    <a href="img/print-3.jpg" class="venobox" data-gall="portfolio">
+                        <figure>
+                            <img src="img/print-3.jpg" alt="Hoefnagels banner">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-primary px-3">
+        <div class="container pt-4">
+            <div class="row bg-white rounded">
+                <div class="col-md-6 m-auto text-center p-5">
+                    <h2>Klaar voor jouw digitale start?</h2>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Suspendisse mollis suscipit efficitur.</p>
+                    <a href="" class="btn btn-primary mt-2">Neem contact op <i class="fas fa-arrow-right rotate-up"></i></a>
+                </div>
+            </div>
+
+            <div class="row text-white py-4">
+                <div class="col-md-4">
+                    <img src="../common/img/logo-white.svg" alt="logo" class="mb-3"">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis suscipit efficitur.</p>
+                </div>
+
+                <div class="col-md-6 offset-md-2">
+                    <div class="navbar navbar-dark navbar-expand">
+                        <ul class="navbar-nav justify-content-md-end flex-grow-1 text-uppercase">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Over Ons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-white py-4">
+                <div class="col-md-9 d-flex justify-content-between flex-column flex-md-row mb-3 mb-md-0">
+                    <span><i class="fas fa-envelope-open me-2"></i><a href="emailto:info@dykotrix.be" class="text-white">info@dykotrix.be</a></span>
+                    <span><i class="fas fa-phone me-2"></i><a href="tel:+3212345678" class="text-white">+3212 34 56 78</a></span>
+                    <span><i class="fas fa-building me-2"></i>BTW BE 1234 567 891</span>
+                </div>
+
+                <div class="col-md-3 d-flex justify-content-md-end">
+                    <i class="fa-brands fa-facebook pe-2"></i>
+                    <i class="fa-brands fa-instagram pe-2"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center py-3 border-top text-white">
+                    <span class="small"><a href="https://www.thomasmore.be/" target="_blank" rel="noreferrer" class="text-white">Copyright © 2025 Thomas More</a> - Dit bedrijf is fictief.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../common/js/bootstrap.bundle.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/student1.js"></script>
+    </body>
 </html>
