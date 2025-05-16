@@ -1,5 +1,5 @@
     //set constants
-    const naam = document.getElementById('name');
+    const nameF = document.getElementById('name');
     const email = document.getElementById('email');
     const subject = document.getElementById('subject');
     const message = document.getElementById('message');
@@ -42,15 +42,15 @@
     }
 
     const validateInputs = () => {
-        const naamValue = naam.value.trim();
+        const nameFValue = nameF.value.trim();
         const emailValue = email.value.trim();
         const subjectValue = subject.value.trim();
         const messageValue = message.value.trim();
 
-        if(naamValue === ''){
-            setError(naam, 'Naam is verplicht');
+        if(nameFValue === ''){
+            setError(nameF, 'Naam is verplicht');
         }else{
-            setSuccess(naam);
+            setSuccess(nameF);
         }
 
         if(emailValue === ''){
