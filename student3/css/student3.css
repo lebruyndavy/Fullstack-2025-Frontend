@@ -1,0 +1,99 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.hero-about-section {
+    background: url('https://via.placeholder.com/1920x600/cccccc/808080?text=Hero+Background+Image') no-repeat center center;
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+}
+.hero-about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.hero-about-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.client-logo img {
+    max-height: 50px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    margin: 15px;
+}
+.client-logo img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.team-member-card {
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+
+.team-member-card .card-img-top {
+    transition: filter 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.team-member-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bs-primary); 
+    
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px); 
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+    border-radius: .25rem; 
+}
+
+.team-member-card:hover .card-img-top {
+    filter: blur(2px) brightness(0.7);
+}
+
+.team-member-card:hover .team-member-info {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /
+}
+
+.team-member-info h6 {
+    margin-bottom: 0.5rem;
+}
+
+.team-member-info p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.team-member-info a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.team-member-info a:hover {
+    color: #e0e0e0;
+}
+
+
