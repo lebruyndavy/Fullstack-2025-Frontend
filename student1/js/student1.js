@@ -2,7 +2,9 @@
     Class: 1 ITF WT
     R-number: r1034516  */
 
-// Jquery
+/*
+ *  Jquery for portfolio filter component
+ */
 var $ = jQuery.noConflict();
 
 function initFilter() {
@@ -23,16 +25,16 @@ function initFilter() {
             return;
         }
 
-        // lock wrapper height
+        // Lock wrapper height
         var wrapperHeight = $('.js-filter-wrapper').height();
         $('.js-filter-wrapper').height(wrapperHeight);
 
-        // hide all
+        // Hide all
         $('.js-filter-object').addClass('hide');
         setTimeout(function () {
             $('.js-filter-object').addClass('remove');
 
-            // show filtered results
+            // Show filtered results
             $('.js-filter-object').each(function () {
                 var attrFilterArr = $(this).attr('filterdata').split(' ');
                 if (attrFilterArr.indexOf(filterdata) !== -1) {
@@ -41,7 +43,7 @@ function initFilter() {
             });
         }, 300);
 
-        // show filtered results
+        // Show filtered results
         setTimeout(function () {
             $('.js-filter-object').each(function () {
                 var attrFilterArr = $(this).attr('filterdata').split(' ');
@@ -50,19 +52,19 @@ function initFilter() {
                 }
             });
 
-            // reset wrapper height to match content
+            // Reset wrapper height to match content
             $('.js-filter-wrapper').css('height', '');
         }, 600);
     });
-
-    console.log('ready');
 }
 
 jQuery(document).ready(function($){
     initFilter();
 });
 
-// Initiate Venobox
+/*
+ *  Initiate Venobox
+ */
 new VenoBox({
     selector: '.venobox',
     numeration: true,
