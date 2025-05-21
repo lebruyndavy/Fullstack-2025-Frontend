@@ -48,27 +48,27 @@
         const messageValue = message.value.trim();
 
         if(nameFValue === ''){
-            setError(nameF, 'Naam is verplicht');
+            setError(nameF, 'Name is required');
         }else{
             setSuccess(nameF);
         }
 
         if(emailValue === ''){
-            setError(email, "Email is veplicht");
+            setError(email, "Email is required");
         } else if (!isValidEmail(emailValue)){
-            setError(email, "Vul een geldig email adres in");
+            setError(email, "Enter a valid email address");
         } else{
             setSuccess(email);
         }
 
         if(subjectValue === ''){
-            setError(subject, 'Onderwerp is verplicht');
+            setError(subject, 'Subject is required');
         }else{
             setSuccess(subject);
         }
 
         if(messageValue === ''){
-            setError(message, 'Bericht is verplicht');
+            setError(message, 'Message is required');
         }else{
             setSuccess(message);
         }

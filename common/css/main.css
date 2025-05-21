@@ -16,8 +16,60 @@ body {
 }
 
 /* Header */
+.home header {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: -300px;
+        right: -300px;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, #FFD700 0%, #fccf7c 30%, transparent 70%);
+        border-radius: 50%;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 0.4;
+
+        @media (min-width: 768px) {
+            top: -500px;
+            right: -500px;
+            width: 1000px;
+            height: 1000px;
+        }
+    }
+
+    @media (min-width: 992px) { 
+        &:before {
+            content: "";
+            position: absolute;
+            top: -500px;
+            left: -500px;
+            width: 1000px;
+            height: 1000px;
+            background: radial-gradient(circle, #FFD700 0%, #fccf7c 30%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.4;
+        }
+    }
+}
+
 .nav-link.active {
     font-weight: 700;
+}
+
+.navbar-brand, .nav-item, .navbar-toggler {
+    z-index: 1;
+}
+
+#hero {
+    h1, p {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 /* Buttons */
@@ -81,7 +133,6 @@ p, a, span {
 .small {
     font-size: 0.750rem;
 }
-
 
 /* Utilty */
 .rotate-up { transform: rotate(-45deg); }
