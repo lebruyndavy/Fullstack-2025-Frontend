@@ -29,7 +29,6 @@ jobs:
           app_location: "/"
           api_location: ""
           output_location: "."
-          app_build_command: ""
           app_build_command: "echo No build needed"
 
   close_pull_request_job:
