@@ -29,7 +29,6 @@ jobs:
           app_location: "/"
           api_location: ""
           output_location: "."
-          app_build_command: ""
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
