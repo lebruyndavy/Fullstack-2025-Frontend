@@ -21,7 +21,7 @@
 
     <script src="../common/js/jquery-3.7.1.min.js"></script>
 </head>
-<body>
+<body class="body-student1">
     <header class="bg-light">
         <nav id="navigation" class="navbar navbar-expand-md">
             <div class="container">
@@ -60,142 +60,76 @@
     </header>
 
     <main>
-        <section class="portfolio container mb-5">
+        <section class="block portfolio container mb-5">
             <div class="row mb-3">
                 <div class="col-8 mx-auto text-center pt-5">
                     <h1>Portfolio</h1>
                     <p class="mb-0">A good start is half the battle. So what you see below is already a solid beginning, but it's not the full picture.</p>
                     <p>Got a great idea yourself? Let's turn it into something real.</p>
                 </div>
-                <div class="col-12">
-                    <ul class="list-unstyled mt-2 d-flex flex-row flex-wrap justify-content-center align-items-center px-2">
-                        <li class="me-2 mb-2">
-                            <span class="js-filter-trigger active portfolio__button" filterdata="all">
-                                All
-                            </span>
-                        </li>
-                        <li class="me-2 mb-2">
-                            <span class="js-filter-trigger portfolio__button" filterdata="digital">
-                                Digital designs
-                            </span>
-                        </li>
-                        <li class="me-2 mb-2">
-                            <span class="js-filter-trigger portfolio__button" filterdata="branding">
-                                Logo & branding
-                            </span>
-                        </li>
-                        <li class="me-2 mb-2">
-                            <span class="js-filter-trigger portfolio__button" filterdata="website">
-                                Website & UI/UX
-                            </span>
-                        </li>
-                        <li class="me-2 mb-2">
-                            <span class="js-filter-trigger portfolio__button" filterdata="print">
-                                Business print materials
-                            </span>
-                        </li>
-                    </ul>
+                <div class="col-12 d-flex justify-content-center" id="portfolio-categories">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading categories...</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row js-filter-wrapper portfolio__object-wrapper">
-                <div class="js-filter-object portfolio__object" filterdata="digital">
-                    <a href="img/digital-1.jpg" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/digital-1.jpg" alt="Studylab ads">
-                        </figure>
-                    </a>
+
+            <div class="row d-flex justify-content-center" id="portfolio-items" >
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading items...</span>
+                    </div>
                 </div>
-                <div class="js-filter-object portfolio__object" filterdata="branding">
-                    <a href="img/branding-1.jpeg" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/branding-1.jpeg" alt="Digiweb logo">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="website">
-                    <a href="img/website-1.jpg" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/website-1.jpg" alt="Vitacool website">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="print">
-                    <a href="img/print-1.jpg" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/print-1.jpg" alt="Alouette visitekaartje">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="digital">
-                    <a href="img/digital-2.jpg" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/digital-2.jpg" alt="ARI Technics ads">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="branding">
-                    <a href="img/branding-2.jpg" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/branding-2.jpg" alt="Wheels & Deals mini">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="website">
-                    <a href="img/website-2.png" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/website-2.png" alt="Squire website">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="print">
-                    <a href="img/print-2.png" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/print-2.png" alt="Asbest platform flyer">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="digital">
-                    <a href="img/digital-3.png" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/digital-3.png" alt="Immoservice posts">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="branding">
-                    <a href="img/branding-3.jpg" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/branding-3.jpg" alt="Sister Studio logo">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="website">
-                    <a href="img/website-3.png" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/website-3.png" alt="Simba login">
-                        </figure>
-                    </a>
-                </div>
-                <div class="js-filter-object portfolio__object" filterdata="print">
-                    <a href="img/print-3.jpg" class="venobox" data-gall="portfolio">
-                        <figure>
-                            <img src="img/print-3.jpg" alt="Hoefnagels banner">
-                        </figure>
-                    </a>
+            </div>
+        </section>
+
+        <section class="block newsletter bg-light">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-6">
+                        <h2>Want to keep up with the current design trends?</h2>
+                        <p>
+                            Join a growing community of creatives who care about more than just services. 
+                            We're all about inspiration, insights, and impact.
+                        </p>
+                        <p>
+                            Subscribe to our free weekly newsletter for expert design tips, marketing insights, 
+                            and the latest trends shaping the industry.
+                        </p>
+                        <p>Totally free. No fluff. Just value.</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <form id="newsletter-form" class="p-4 border rounded bg-primary text-white">
+                            <h5 class="mb-3">Subscribe to our Newsletter</h5>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <button id="newsletter-submit" type="submit" class="btn btn-light mt-3">
+                                Subscribe
+                                <span id="newsletter-spinner" class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true"></span>
+                            </button>
+                            <div id="newsletter-feedback"></div>
+                        </form>
+
+                        <div id="newsletter-success" class="alert alert-success d-none mt-3">
+                            Successfully subscribed to the newsletter!
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer id="footer" class="bg-primary px-3">
+    <footer id="footer" class="block bg-primary px-3">
         <div class="container pt-4">
-            <div class="row bg-white rounded">
-                <div class="col-md-8 m-auto text-center p-5">
-                    <h2>Ready for your adventure?</h2>
-                    <p>Your vision, our expertise - together, we can bring bold ideas to life. Whether you're ready to start a project or just want to explore possibilities, we're here to listen, inspire, and collaborate.</p>
-                    <a href="" class="btn btn-primary mt-2">Connect with us <i class="fas fa-arrow-right rotate-up"></i></a>
-                </div>
-            </div>
-
             <div class="row text-white py-4">
                 <div class="col-md-4">
                     <img src="../common/img/logo-white.svg" alt="logo" class="mb-3">
@@ -244,5 +178,6 @@
     <script src="../common/js/bootstrap.bundle.min.js"></script>
     <script src="js/venobox.min.js"></script>
     <script src="js/student1.js"></script>
-    </body>
+    <script src="js/student1_extra.js"></script>
+</body>
 </html>
