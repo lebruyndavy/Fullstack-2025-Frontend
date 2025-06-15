@@ -2,6 +2,25 @@
     Class: 1 ITF WT
     R-number: r1034516  */
 
+.body-student1 {
+    .block,
+    .row:not(.anim-0) > div[class*="col-"],
+    .row:not(.anim-0) > div[class*="col-lg"],
+    .row:not(.anim-0) > div[class*="col-md"] {
+        opacity: 0;
+        transform: translate(0, 1rem);
+        transition: opacity 0.3s cubic-bezier(.25,1,.5,1), transform 0.3s cubic-bezier(.25,1,.5,1);
+    }
+    
+    .block.active,
+    .row:not(.anim-0) > div[class*="col-"].active,
+    .row:not(.anim-0) > div[class*="col-lg-"].active,
+    .row:not(.anim-0) > div[class*="col-md-"].active {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+}
+
 .portfolio {
     .portfolio__button {
         font-weight: 500;
@@ -10,6 +29,8 @@
         border-radius: 10px;
         padding: 0.2em 0.6rem;
         transition: ease 0.3s;
+        background-color: white;
+        font-size: 0.875rem;
 
         &:hover,
         &.active {
@@ -20,20 +41,24 @@
         }
     }
 
-    .portfolio__object-wrapper {
+    .portfolio__categories {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        margin: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2rem 0;
+        margin-top: 0.5rem;
+        list-style: none;
     }
 
-    .portfolio__object {
+    .portfolio__item {
         width: 100%;
         max-width: 100%;
         flex-grow: 1;
         opacity: 1;
         transform-origin: center center;
         pointer-events: all;
-        transition: opacity .3s, transform .3s;
         margin: 0 0 1rem 0;
 
         @media (min-width: 576px) {
@@ -42,21 +67,6 @@
 
         @media (min-width: 992px) {
             max-width: calc(33.3333% - 20px);
-        }
-
-        &.hide {
-            opacity: 0;
-            transform: scale(0);
-            pointer-events: none;
-        }
-
-        &.remove {
-            flex: 0;
-            margin: 0;
-            pointer-events: none;
-            display: none;
-            width: 0;
-            height: 0;
         }
 
         figure {
