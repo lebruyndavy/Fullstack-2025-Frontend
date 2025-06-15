@@ -96,7 +96,16 @@
             }
         }
     }
+}
 
+.form-control {
+    padding: 0.8rem;
+    background-color: #fefefe;
+
+    &:focus {
+        border-color: var(--bs-primary);
+        box-shadow: 0 0 0 .25rem rgba(238, 237, 228, .25)
+    }
 }
 
 @media (min-width: 576px) {
