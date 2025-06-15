@@ -4,18 +4,16 @@
 
 .body-student1 {
     .block,
-    .row:not(.anim-0) > div[class*="col-"],
-    .row:not(.anim-0) > div[class*="col-lg"],
-    .row:not(.anim-0) > div[class*="col-md"] {
+    .row > div[class*="col-"],
+    .row > div[class*="col-md"] {
         opacity: 0;
         transform: translate(0, 1rem);
         transition: opacity 0.3s cubic-bezier(.25,1,.5,1), transform 0.3s cubic-bezier(.25,1,.5,1);
     }
     
     .block.active,
-    .row:not(.anim-0) > div[class*="col-"].active,
-    .row:not(.anim-0) > div[class*="col-lg-"].active,
-    .row:not(.anim-0) > div[class*="col-md-"].active {
+    .row > div[class*="col-"].active,
+    .row > div[class*="col-md-"].active {
         opacity: 1;
         transform: translate(0, 0) scale(1);
     }

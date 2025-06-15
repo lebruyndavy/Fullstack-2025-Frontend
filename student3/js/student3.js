@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const teamMembers = await response.json();
             const teamContainer = document.querySelector('#team .row.justify-content-center.text-center.g-4');
-
+            const teamMemberCards = "";
             teamMembers.forEach(member => {
-                const teamMemberCard = `
+                teamMemberCards += `
                     <div class="col-lg-3 col-md-6">
                         <div class="card team-member-card border-0 position-relative">
                             <img src="../common/img/${member.name.toLowerCase().split(' ')[0]}.jpg" 
@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </div>
                 `;
-                teamContainer.insertAdjacentHTML('beforeend', teamMemberCard);
             });
+            teamContainer.innerHTML = teamMemberCard;
         } catch (error) {
             console.error('Network error loading team members:', error);
 
@@ -55,19 +55,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const testimonials = await response.json();
             const carouselInner = document.querySelector('#testimonials .carousel-inner');
+            const testimonialItems = "";
 
             testimonials.forEach((testimonial, index) => {
-                const testimonialItem = `
+                testimonialItems += `
                     <div class="carousel-item ${index === 0 ? 'active' : ''}">
                         <div class="bg-light rounded p-4">
-                            <p>"${testimonial.content}"</p>
+                            <p>${testimonial.content}</p>
                             <p class="mt-20 mb-0 fw-bold">${testimonial.client_name}</p>
                             <p>${testimonial.company_name}</p>
                         </div>
                     </div>
                 `;
-                carouselInner.insertAdjacentHTML('beforeend', testimonialItem);
             });
+            carouselInner.innerHTML = testimonialItems;
 
             // Update indicators if needed
             const indicatorsContainer = document.querySelector('#testimonials .carousel-indicators');

@@ -37,7 +37,7 @@ function animateBlock() {
             $element.addClass("active");
             var delay = 600;
 
-            $element.find('[class*="col-"], [class*="col-md-"], [class*="col-lg-"], .anim-elem, u').each(function() {
+            $element.find('[class*="col-"], [class*="col-md-"]').each(function() {
                 var $child = $(this);
                 
                 setTimeout(function() {
