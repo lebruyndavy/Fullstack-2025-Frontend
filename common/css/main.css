@@ -15,8 +15,9 @@ body {
 }
 
 /* Header */
-.home header {
+.home .header-wrapper {
     position: relative;
+    overflow: hidden;
 
     &:after {
         content: "";
